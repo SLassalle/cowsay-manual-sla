@@ -18,7 +18,7 @@ jobs:
     steps:
       - run: |
           apt update
-          apt install cowsay
+          apt -y install cowsay
           cowsay $MESSAGE
         env:
           MESSAGE: ${{ inputs.message }}
